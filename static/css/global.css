@@ -1,0 +1,151 @@
+:root {
+  --backgroud-color: white;
+
+  --primary-color: #eccb26;
+  --secondary-color: #1c3464;
+  --accent-color: #dd3433;
+
+  --primary-text-color: black;
+  --accent-text-color: white;
+
+  --padding-sml: 4px;
+  --padding-sm: 8px;
+  --padding-mid: 12px;
+  --padding-md: 16px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+
+  --br-sm: 4px;
+  --br-md: 8px;
+  --br-lg: 12px;
+
+  --transition-delay: 0.3s;
+
+  --max-width: 900px;
+  --max-width-content: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: var(--max-width-content);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--color-background);
+  padding: var(--padding-mid) var(--padding-md);
+  border: none;
+  border-radius: var(--br-md);
+  cursor: pointer;
+  transition: background-color var(--transition-delay);
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.banner-container {
+  width: 100%;
+}
+
+.banner {
+  height: 6rem;
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+/* Header */
+
+.header {
+  height: 4rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  max-width: 900px;
+  text-align: center;
+}
+
+.navbar-list {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-item {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar-item-link {
+  padding: var(--padding-sm) var(--padding-md);
+  border-radius: var(--br-md);
+  transition: background-color var(--transition-delay) ease;
+}
+
+.navbar-item-link:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer {
+  height: 10rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--accent-text-color);
+}
+
+.footer-logo-img {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  .navbar-list {
+    display: none;
+  }
+}
