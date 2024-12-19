@@ -1,0 +1,255 @@
+:root {
+  --backgroud-color: white;
+  --surface-color: #e3f2fd;
+
+  --primary-color: #eccb26;
+  --secondary-color: #1c3464;
+  --secondary-color-lighter: #244280;
+  --accent-color: #dd3433;
+
+  --primary-text-color: black;
+  --accent-text-color: white;
+
+  --padding-sml: 4px;
+  --padding-sm: 8px;
+  --padding-mid: 12px;
+  --padding-md: 16px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+
+  --br-sm: 4px;
+  --br-md: 8px;
+  --br-lg: 12px;
+
+  --transition-delay: 0.3s;
+
+  --max-width: 900px;
+  --max-width-content: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: var(--max-width-content);
+}
+
+section {
+  padding: 0 var(--padding-md);
+}
+
+body {
+  overflow-x: hidden;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+  position: relative;
+}
+
+.a-button {
+  background-color: var(--primary-color);
+  color: var(--color-background);
+  padding: var(--padding-mid) var(--padding-md);
+  border: none;
+  border-radius: var(--br-md);
+  cursor: pointer;
+  transition: background-color var(--transition-delay) ease,
+    color var(--transition-delay) ease;
+  font-size: 1em;
+}
+
+.a-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-text-color);
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.banner-container {
+  width: 100%;
+}
+
+.banner {
+  height: 6rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* WhatsApp icon */
+
+.whatsapp-contact-icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* Header */
+
+.header {
+  height: 4rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  max-width: 900px;
+  text-align: center;
+}
+
+.navbar.open {
+  top: 0px;
+}
+
+.navbar-list {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-item {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar-item-link {
+  padding: var(--padding-sm) var(--padding-md);
+  border-radius: var(--br-md);
+  transition: background-color var(--transition-delay) ease,
+    color var(--transition-delay) ease;
+}
+
+.navbar-item-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-text-color);
+}
+
+.header-mobile-menu {
+  display: none;
+}
+
+.header-mobile-menu-close {
+  display: none;
+}
+
+.header-mobile-menu-icon {
+  height: 30px;
+  width: 30px;
+  z-index: 3;
+}
+
+.header-mobile-menu-icon.hide {
+  display: none;
+}
+
+.header-mobile-menu-icon.show {
+  display: initial;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg);
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-logo-img {
+  height: 100px;
+  width: 100px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  color: var(--accent-text-color);
+}
+
+.footer-content-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-content-info a {
+  color: var(--accent-text-color);
+  border-bottom: 1px solid var(--backgroud-color);
+}
+
+/* Header Mobile */
+
+@media (max-width: 900px) {
+  .navbar {
+    height: 100%;
+    position: absolute;
+    display: initial;
+    top: -500px;
+  }
+
+  .navbar-list {
+    background-color: var(--primary-color);
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding: var(--padding-md) 0;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+  }
+
+  .header-mobile-menu {
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    padding: 0 var(--padding-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}

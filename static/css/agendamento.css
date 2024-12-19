@@ -1,0 +1,181 @@
+.scheduling {
+  margin: 5rem 0;
+}
+
+.scheduling-title {
+  font-size: 2.5em;
+}
+
+.scheduling-content {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.scheduling-form {
+  width: 100%;
+}
+
+.scheduling-form p {
+  margin: 0 0 var(--padding-lg) 0;
+}
+
+.scheduling-form-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.scheduling-form-container label[for]::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.scheduling-form-container label[for="message"]::after {
+  content: "";
+}
+
+.scheduling-form input {
+  height: 20px;
+  padding: var(--padding-sm) var(--padding-sm);
+  border-radius: var(--br-md);
+  border: 1px solid var(--secondary-color);
+}
+
+.scheduling-form select {
+  height: 38px;
+  padding: var(--padding-sm) var(--padding-sm);
+  border-radius: var(--br-md);
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+.scheduling-form textarea {
+  min-height: 92px;
+  max-height: 200px;
+  padding: var(--padding-sm) var(--padding-sm);
+  border-radius: var(--br-md);
+  border: 1px solid var(--secondary-color);
+  resize: none;
+}
+
+.scheduling-form-first,
+.scheduling-form-second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.scheduling-form-button {
+  padding: var(--padding-md) var(--padding-xl);
+  background-color: var(--secondary-color);
+  border-radius: var(--br-md);
+  border: none;
+  color: var(--accent-text-color);
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.scheduling-form-button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.scheduling-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scheduling-more-options {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.scheduling-more-options-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.scheduling-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scheduling-option {
+  padding: var(--padding-md) var(--padding-lg);
+  background-color: var(--secondary-color);
+  border-radius: var(--br-md);
+  color: var(--accent-text-color);
+}
+
+.scheduling-option:hover {
+  background-color: var(--secondary-color-lighter);
+}
+
+.scheduling-more-info {
+  font-size: 0.9em;
+}
+
+/* Contato */
+
+.contact-content {
+  display: flex;
+}
+
+.contact-illustration-container {
+  width: 100%;
+}
+
+.contact-illustration {
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 2em;
+}
+
+.contact-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.contact-item {
+  padding: var(--padding-mid) var(--padding-md);
+  background-color: var(--secondary-color);
+  border-radius: var(--br-md);
+  color: var(--accent-text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .scheduling-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .scheduling-form-container {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+}
