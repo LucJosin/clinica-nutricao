@@ -1,0 +1,142 @@
+/* Container principal */
+.container-convenio {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+.about-us {
+    margin: 3.5rem 0;
+
+}
+/* Título da página */
+.titulo-convenio {
+    font-size: 2.5em;
+    
+}
+
+/* Conteúdo principal */
+.content-convenio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Imagem e texto */
+.image-text-convenio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-convenio {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.descricao-convenio {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Botões */
+.buttons-convenio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-convenio {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-convenio:hover {
+    background-color: var(--primary-color);
+}
+
+/* Logos */
+.logos-convenio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-convenio {
+    max-width: 150px;
+}
+/* Estilização geral (desktop já está implementado) */
+
+/* Estilização específica para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Container principal */
+    .container-convenio {
+        padding: 15px;
+    }
+
+    /* Título da página */
+    .titulo-convenio {
+        font-size: 1.5rem;
+    }
+
+    /* Conteúdo principal */
+    .content-convenio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Imagem e texto */
+    .image-text-convenio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-convenio {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .descricao-convenio {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    /* Botões */
+    .buttons-convenio {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-convenio {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Logos */
+    .logos-convenio {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo-convenio {
+        max-width: 70%;
+        height: auto;
+    }
+}
