@@ -1,5 +1,6 @@
 :root {
   --backgroud-color: white;
+  --surface-color: #e3f2fd;
 
   --primary-color: #eccb26;
   --secondary-color: #1c3464;
@@ -41,19 +42,21 @@ body {
   overflow-x: hidden;
 }
 
-button {
+.a-button {
   background-color: var(--primary-color);
   color: var(--color-background);
   padding: var(--padding-mid) var(--padding-md);
   border: none;
   border-radius: var(--br-md);
   cursor: pointer;
-  transition: background-color var(--transition-delay);
+  transition: background-color var(--transition-delay) ease,
+    color var(--transition-delay) ease;
   font-size: 1em;
 }
 
-button:hover {
-  background-color: var(--accent-color);
+.a-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-text-color);
 }
 
 a {
@@ -105,11 +108,13 @@ a {
 .navbar-item-link {
   padding: var(--padding-sm) var(--padding-md);
   border-radius: var(--br-md);
-  transition: background-color var(--transition-delay) ease;
+  transition: background-color var(--transition-delay) ease,
+    color var(--transition-delay) ease;
 }
 
 .navbar-item-link:hover {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
+  color: var(--accent-text-color);
 }
 
 /* Footer */
