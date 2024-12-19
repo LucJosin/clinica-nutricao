@@ -45,6 +45,8 @@ section {
 
 body {
   overflow-x: hidden;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 .a-button {
@@ -178,6 +180,23 @@ a {
 .footer-logo-img {
   height: 100px;
   width: 100px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-content-info a {
+  color: var(--accent-text-color);
+  border-bottom: 1px solid var(--backgroud-color);
 }
 
 /* Header Mobile */
