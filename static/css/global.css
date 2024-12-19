@@ -47,6 +47,7 @@ body {
   overflow-x: hidden;
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
+  position: relative;
 }
 
 .a-button {
@@ -79,6 +80,16 @@ a {
   height: 6rem;
   width: 100%;
   object-fit: contain;
+}
+
+/* WhatsApp icon */
+
+.whatsapp-contact-icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 /* Header */
